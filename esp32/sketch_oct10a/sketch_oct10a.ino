@@ -1,26 +1,24 @@
 #include <WiFi.h>
 #include <PubSubClient.h>
 
-const char* ssid = "An_Home T3_5G";
+// 1. Wi-Fi
+const char* ssid = "An_Home T3";
 const char* password = "*12345678#";
 
-// --- Cấu hình MQTT Broker (HiveMQ Public) ---
-const char* mqtt_server = "broker.hivemq.com";
+// 2. MQTT Broker
+const char* mqtt_server = "192.168.113.203";
 const int mqtt_port = 1883;
 const char* mqtt_topic_pub = "fan_data";
 
-// Khởi tạo các đối tượng mạng
-WiFiClient espClient;
-PubSubClient client(espClient);
-
-// Cấu hình cổng UART2 (Hardware Serial 2 trên ESP32)
+// 3. UART2
 #define RXD2 16
 #define TXD2 17
 
+WiFiClient espClient;
+PubSubClient client(espClient);
+
 void setup_wifi() {
-  delay(10);
-  Serial.println();
-  Serial.print("Connecting to ");
+  Serial.print("Connecting to WiFi: ");
   Serial.println(ssid);
 
   WiFi.begin(ssid, password);
@@ -30,62 +28,76 @@ void setup_wifi() {
     Serial.print(".");
   }
 
-  Serial.println("\nWiFi connected");
-  Serial.println("IP address: ");
+  Serial.println("\nWiFi connected!");
+  Serial.print("ESP32 IP: ");
   Serial.println(WiFi.localIP());
 }
 
-void reconnect() {
-  // Lặp lại cho đến khi kết nối thành công với MQTT Broker
+void reconnect_mqtt() {
   while (!client.connected()) {
-    Serial.print("Attempting MQTT connection...");
-    // Tạo ID ngẫu nhiên cho Client để tránh trùng lặp trên Public Broker
+    Serial.print("Connecting to MQTT...");
+
     String clientId = "ESP32_Gateway_";
     clientId += String(random(0xffff), HEX);
-    
+
     if (client.connect(clientId.c_str())) {
-      Serial.println("connected");
+      Serial.println("connected!");
     } else {
-      Serial.print("failed, rc=");
-      Serial.print(client.state());
-      Serial.println(" try again in 5 seconds");
-      delay(5000);
+      Serial.print("Failed, state = ");
+      Serial.println(client.state());
+      delay(3000);
     }
   }
 }
 
 void setup() {
-  // Cổng Serial 0: Dùng để in log ra màn hình máy tính (Debug)
   Serial.begin(115200);
-  
-  // Cổng Serial 2: Dùng để nhận chuỗi JSON từ STM32
-  // Tốc độ 115200 bps phải khớp chính xác với cấu hình trên CubeMX
+
+  // UART2: RX = GPIO16, TX = GPIO17
   Serial2.begin(115200, SERIAL_8N1, RXD2, TXD2);
+  Serial2.setTimeout(100);
 
   setup_wifi();
+
   client.setServer(mqtt_server, mqtt_port);
+  client.setBufferSize(512);
 }
 
 void loop() {
-  if (!client.connected()) {
-    reconnect();
+  // Duy trì kết nối Wi-Fi
+  if (WiFi.status() != WL_CONNECTED) {
+    setup_wifi();
   }
-  client.loop(); // Giữ kết nối MQTT sống (Keep-alive)
 
-  // Kiểm tra xem STM32 có gửi gói dữ liệu nào qua UART hay không
-  if (Serial2.available()) {
-    // Đọc toàn bộ chuỗi cho đến khi gặp ký tự xuống dòng (\n)
-    String json_payload = Serial2.readStringUntil('\n');
-    
-    // In ra màn hình máy tính để kiểm tra
+  // Duy trì kết nối MQTT
+  if (!client.connected()) {
+    reconnect_mqtt();
+  }
+
+  client.loop();
+
+  // Nhận một dòng JSON từ STM32
+  if (Serial2.available() > 0) {
+    String payload = Serial2.readStringUntil('\n');
+    payload.trim();
+
+    if (payload.length() == 0) {
+      return;
+    }
+
     Serial.print("Received from STM32: ");
-    Serial.println(json_payload);
-    
-    // Đẩy chuỗi JSON thẳng lên MQTT Broker
-    if (client.publish(mqtt_topic_pub, json_payload.c_str())) {
-      Serial.println("-> Published to MQTT successfully.");
+    Serial.println(payload);
+
+    // Publish dữ liệu lên MQTT
+    bool success = client.publish(
+      mqtt_topic_pub,
+      payload.c_str()
+    );
+
+    if (success) {
+      Serial.println("Published to MQTT successfully!");
     } else {
-      Serial.println("-> Publish failed!");
+      Serial.println("MQTT publish failed!");
     }
   }
 }
