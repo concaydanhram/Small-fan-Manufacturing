@@ -351,3 +351,324 @@ TCP    0.0.0.0:1883    0.0.0.0:0    LISTENING
 - Mosquitto: https://mosquitto.org/
 - PubSubClient: https://github.com/knolleary/pubsubclient
 - Arduino ESP32: https://docs.espressif.com/projects/arduino-esp32/en/latest/
+
+## 11. Cài đặt môi trường Python cho Backend Server
+
+Python Backend chịu trách nhiệm nhận dữ liệu từ MQTT Broker, phân tích bản tin JSON và lưu dữ liệu cảm biến vào InfluxDB 3 Core.
+
+### 11.1. Yêu cầu hệ thống
+
+- Python 3.11 hoặc phiên bản tương thích.
+- Mosquitto MQTT Broker đang chạy.
+- InfluxDB 3 Core đang chạy.
+- ESP32 có thể publish dữ liệu lên topic `fan_data`.
+
+### 11.2. Cấu trúc thư mục
+
+```text
+server/
+├── .venv/          # Môi trường Python ảo
+├── main.py         # Nhận MQTT và ghi dữ liệu vào InfluxDB
+├── check_db.py     # Truy vấn và kiểm tra dữ liệu
+├── .env            # Cấu hình môi trường cục bộ
+├── .gitignore      # Các tệp không đưa lên Git
+└── requirements.txt # Danh sách thư viện Python
+```
+
+Thư mục `.venv` chứa các thư viện của môi trường Python ảo và không nên được đưa lên GitHub.
+
+### 11.3. Tạo môi trường Python ảo
+
+Mở PowerShell và di chuyển đến thư mục server:
+
+```powershell
+cd D:\prj3\server
+```
+
+Tạo môi trường Python ảo bằng Python 3.11:
+
+```powershell
+py -3.11 -m venv .venv
+```
+
+Kích hoạt môi trường:
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
+Nếu PowerShell chặn việc chạy script, có thể cho phép trong phiên terminal hiện tại nếu chính sách bảo mật của máy cho phép:
+
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```
+
+Sau đó kích hoạt lại môi trường.
+
+Kiểm tra phiên bản Python:
+
+```powershell
+python --version
+python -m pip --version
+```
+
+### 11.4. Cài đặt các thư viện cần thiết
+
+Cập nhật pip:
+
+```powershell
+python -m pip install --upgrade pip
+```
+
+Cài đặt các thư viện:
+
+```powershell
+python -m pip install paho-mqtt influxdb3-python python-dotenv
+```
+
+Chức năng của từng thư viện:
+
+| Thư viện | Chức năng |
+|---|---|
+| `paho-mqtt` | Kết nối MQTT Broker và nhận dữ liệu từ topic |
+| `influxdb3-python` | Ghi và truy vấn dữ liệu trong InfluxDB 3 Core |
+| `python-dotenv` | Đọc biến môi trường từ tệp `.env` |
+
+Nếu repository đã có `requirements.txt`, có thể cài đặt toàn bộ thư viện bằng lệnh:
+
+```powershell
+python -m pip install -r requirements.txt
+```
+
+Để tạo hoặc cập nhật danh sách thư viện từ môi trường đang sử dụng:
+
+```powershell
+python -m pip freeze > requirements.txt
+```
+
+Nên kiểm tra nội dung tệp trước khi commit lên Git.
+
+### 11.5. Cấu hình biến môi trường
+
+Tạo tệp `.env` cục bộ trong thư mục `server/` và cấu hình các thông tin cần thiết để kết nối MQTT Broker và InfluxDB.
+
+Các nhóm cấu hình bao gồm:
+
+- Địa chỉ và cổng MQTT Broker.
+- Tên topic nhận dữ liệu.
+- Địa chỉ máy chủ InfluxDB.
+- Tên database.
+- Token xác thực InfluxDB.
+
+Lưu ý:
+
+- Nếu Python và Mosquitto chạy trên cùng máy tính Windows, có thể sử dụng `127.0.0.1` làm địa chỉ MQTT Broker.
+- Nếu kết nối từ thiết bị khác trong mạng LAN, sử dụng địa chỉ IPv4 thực tế của máy tính chạy Mosquitto.
+- Nếu Explorer chạy trong Docker và cần truy cập dịch vụ trên Windows, có thể sử dụng `host.docker.internal` thay cho `127.0.0.1`.
+- Không đưa token xác thực hoặc mật khẩu thật lên repository công khai.
+
+### 11.6. Cấu hình `.gitignore`
+
+Thêm các dòng sau vào tệp `.gitignore`:
+
+```gitignore
+.env
+.venv/
+__pycache__/
+*.py[cod]
+```
+
+Các quy tắc này giúp tránh đưa tệp cấu hình chứa thông tin nhạy cảm, môi trường Python ảo và các tệp cache lên Git.
+
+## 12. Cài đặt và cấu hình InfluxDB 3 Core
+
+InfluxDB 3 Core được sử dụng để lưu trữ dữ liệu cảm biến theo chuỗi thời gian.
+
+### 12.1. Khởi động InfluxDB
+
+Ví dụ, nếu chương trình InfluxDB được cài tại `D:\influxDB\influxdb3.exe`, có thể khởi động bằng PowerShell:
+
+```powershell
+& "D:\influxDB\influxdb3.exe" serve --plugin-dir "D:\influxDB\plugins"
+```
+
+Giữ nguyên các tham số và thư mục dữ liệu đang sử dụng trong hệ thống hiện tại. Không tự ý đổi thư mục dữ liệu nếu chưa xác định vị trí lưu database hiện có.
+
+Giữ cửa sổ terminal mở trong khi sử dụng hệ thống.
+
+### 12.2. Cấu hình database và bảng dữ liệu
+
+Hệ thống sử dụng:
+
+- Database: `fan_monitor`
+- Bảng dữ liệu: `fan_telemetry`
+
+Nếu database chưa tồn tại, hãy tạo database bằng công cụ dòng lệnh của InfluxDB 3 Core và sử dụng token phù hợp.
+
+Bảng `fan_telemetry` sẽ được tạo tự động khi có bản ghi đầu tiên được ghi thành công. Không cần tạo bảng thủ công.
+
+### 12.3. Cấu trúc dữ liệu
+
+Mỗi bản tin JSON hợp lệ từ ESP32 được Python chuyển thành một bản ghi trong InfluxDB.
+
+| Trường | Loại dữ liệu | Ý nghĩa |
+|---|---|---|
+| `time` | Timestamp | Thời điểm ghi nhận dữ liệu |
+| `dev` | Tag | Định danh thiết bị |
+| `freq` | Số | Tần số đo được |
+| `amp` | Số | Biên độ rung |
+| `current` | Số | Dòng điện đo được |
+
+Cần đảm bảo đơn vị của các giá trị đo phù hợp với chương trình STM32.
+
+## 13. Khởi chạy Backend Server
+
+Trước khi chạy Python Backend, cần đảm bảo Mosquitto và InfluxDB đã khởi động thành công.
+
+### 13.1. Chạy chương trình nhận dữ liệu MQTT
+
+Mở PowerShell:
+
+```powershell
+cd D:\prj3\server
+.\.venv\Scripts\Activate.ps1
+python main.py
+```
+
+Kết quả mong đợi:
+
+```text
+Connecting to MQTT broker ...
+[MQTT] Connected to ...
+[MQTT] Subscribed to topic: fan_data
+```
+
+Chương trình sẽ tiếp tục lắng nghe bản tin MQTT cho đến khi người dùng dừng tiến trình.
+
+### 13.2. Kiểm tra dữ liệu nhận được
+
+Khi ESP32 publish một bản tin JSON hợp lệ, Python sẽ phân tích dữ liệu và ghi vào InfluxDB.
+
+Ví dụ bản tin:
+
+```json
+{"dev":"fan1","freq":50.0,"amp":0.8,"current":0.35}
+```
+
+Các giá trị trên chỉ là dữ liệu minh họa.
+
+Nếu ghi thành công, terminal sẽ hiển thị tương tự:
+
+```text
+[DB] Saved | dev=fan1, freq=50.0, amp=0.8, current=0.35
+```
+
+Kết nối MQTT thành công không đồng nghĩa với việc ghi database thành công. Cần kiểm tra log để xác nhận dữ liệu đã được xử lý và lưu.
+
+## 14. Kiểm tra dữ liệu đã lưu
+
+### 14.1. Kiểm tra bằng Python
+
+Mở một terminal PowerShell khác:
+
+```powershell
+cd D:\prj3\server
+.\.venv\Scripts\python.exe check_db.py
+```
+
+Chương trình sẽ truy vấn tối đa 10 bản ghi mới nhất trong bảng `fan_telemetry`.
+
+### 14.2. Kiểm tra bằng InfluxDB Explorer
+
+InfluxDB Explorer cung cấp giao diện trực quan để truy vấn dữ liệu trong InfluxDB 3 Core.
+
+Tài liệu cài đặt chính thức:
+
+https://docs.influxdata.com/influxdb3/explorer/install/docker/
+
+Sau khi cấu hình kết nối đến InfluxDB và chọn database `fan_monitor`, chạy:
+
+```sql
+SHOW TABLES;
+```
+
+Nếu bảng `fan_telemetry` đã xuất hiện, truy vấn dữ liệu:
+
+```sql
+SELECT *
+FROM fan_telemetry
+ORDER BY time DESC
+LIMIT 20;
+```
+
+Nếu không tìm thấy bảng, hãy kiểm tra log Python để xác nhận có bản ghi nào được ghi thành công hay chưa. Đồng thời, xác minh Explorer đang kết nối đúng máy chủ và database.
+
+## 15. Xử lý lỗi thường gặp
+
+| Lỗi | Nguyên nhân có thể | Cách xử lý |
+|---|---|---|
+| `Missing INFLUXDB_TOKEN` | Chưa đọc được biến môi trường | Kiểm tra cấu hình cục bộ và vị trí tệp `.env` |
+| Không kết nối được MQTT | Sai địa chỉ hoặc broker chưa chạy | Kiểm tra địa chỉ IP, cổng và tiến trình Mosquitto |
+| `DATA ERROR` | Bản tin không đúng cú pháp JSON | Kiểm tra cách STM32 hoặc ESP32 tạo bản tin |
+| `DB ERROR` | Ghi dữ liệu vào InfluxDB thất bại | Kiểm tra thông báo lỗi, địa chỉ, database và token |
+| `table not found` | Chưa ghi thành công hoặc kết nối sai database | Kiểm tra log và cấu hình kết nối |
+| Explorer không kết nối được | Sai endpoint hoặc cấu hình mạng Docker | Kiểm tra địa chỉ InfluxDB và thông tin xác thực |
+| Không thấy dữ liệu | Chưa ghi thành công hoặc truy vấn sai database | Kiểm tra log `[DB] Saved` và câu SQL |
+
+### Lỗi định dạng JSON
+
+Bản tin không hợp lệ:
+
+```text
+{dev:fan1,freq:50.0,amp:0.8,current:0.35}
+```
+
+Bản tin hợp lệ:
+
+```json
+{"dev":"fan1","freq":50.0,"amp":0.8,"current":0.35}
+```
+
+Trong JSON, tên trường và giá trị dạng chuỗi phải được đặt trong dấu ngoặc kép.
+
+## 16. Luồng hoạt động tổng thể
+
+```text
+STM32
+  |
+  | UART / JSON
+  v
+ESP32 Gateway
+  |
+  | Wi-Fi / MQTT
+  v
+Mosquitto MQTT Broker
+  |
+  | Topic: fan_data
+  v
+Python Backend (main.py)
+  |
+  | Phân tích và kiểm tra JSON
+  v
+InfluxDB 3 Core
+  |
+  | Truy vấn SQL
+  v
+InfluxDB Explorer / check_db.py
+```
+
+Hệ thống được xem là hoạt động đúng khi:
+
+1. ESP32 gửi được dữ liệu cảm biến lên MQTT Broker.
+2. Python nhận và phân tích được bản tin JSON.
+3. InfluxDB ghi nhận thành công dữ liệu.
+4. Có thể truy vấn lại các bản ghi đã lưu.
+
+## 17. Tài liệu tham khảo
+
+- Python Virtual Environments: https://docs.python.org/3/library/venv.html
+- Paho MQTT Python Client: https://eclipse.dev/paho/files/paho.mqtt.python/html/
+- InfluxDB 3 Core: https://docs.influxdata.com/influxdb3/core/
+- InfluxDB 3 Python Client: https://github.com/InfluxCommunity/influxdb3-python
+- InfluxDB 3 Explorer: https://docs.influxdata.com/influxdb3/explorer/install/docker/
+
