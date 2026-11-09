@@ -1,0 +1,1803 @@
+{
+  "node_id": "LAPTOP-GIN360R9-node",
+  "db_id": 1,
+  "table_id": 1,
+  "files": [
+    {
+      "id": 0,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/15-30/0000000868.parquet",
+      "size_bytes": 7069,
+      "row_count": 276,
+      "chunk_time": 1794065400000000000,
+      "min_time": 1794065723235032700,
+      "max_time": 1794065999229093200
+    },
+    {
+      "id": 1,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/15-40/0000001468.parquet",
+      "size_bytes": 12289,
+      "row_count": 600,
+      "chunk_time": 1794066000000000000,
+      "min_time": 1794066000229315600,
+      "max_time": 1794066599690917500
+    },
+    {
+      "id": 2,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/15-50/0000002065.parquet",
+      "size_bytes": 11709,
+      "row_count": 597,
+      "chunk_time": 1794066600000000000,
+      "min_time": 1794066600689301700,
+      "max_time": 1794067199681391300
+    },
+    {
+      "id": 3,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/16-00/0000002662.parquet",
+      "size_bytes": 11637,
+      "row_count": 597,
+      "chunk_time": 1794067200000000000,
+      "min_time": 1794067200691669000,
+      "max_time": 1794067799722109700
+    },
+    {
+      "id": 4,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/16-10/0000003258.parquet",
+      "size_bytes": 11781,
+      "row_count": 596,
+      "chunk_time": 1794067800000000000,
+      "min_time": 1794067800688950400,
+      "max_time": 1794068399694685800
+    },
+    {
+      "id": 5,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/16-20/0000003855.parquet",
+      "size_bytes": 11548,
+      "row_count": 597,
+      "chunk_time": 1794068400000000000,
+      "min_time": 1794068400684723700,
+      "max_time": 1794068999692453000
+    },
+    {
+      "id": 6,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/16-30/0000004452.parquet",
+      "size_bytes": 11431,
+      "row_count": 597,
+      "chunk_time": 1794069000000000000,
+      "min_time": 1794069000693473600,
+      "max_time": 1794069599687143100
+    },
+    {
+      "id": 7,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/16-40/0000005049.parquet",
+      "size_bytes": 11767,
+      "row_count": 597,
+      "chunk_time": 1794069600000000000,
+      "min_time": 1794069600690422600,
+      "max_time": 1794070199699601900
+    },
+    {
+      "id": 8,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/16-50/0000005645.parquet",
+      "size_bytes": 11368,
+      "row_count": 596,
+      "chunk_time": 1794070200000000000,
+      "min_time": 1794070200699584800,
+      "max_time": 1794070799682396100
+    },
+    {
+      "id": 9,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/17-00/0000006240.parquet",
+      "size_bytes": 11607,
+      "row_count": 595,
+      "chunk_time": 1794070800000000000,
+      "min_time": 1794070800685892600,
+      "max_time": 1794071399691598400
+    },
+    {
+      "id": 10,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/17-10/0000006835.parquet",
+      "size_bytes": 11339,
+      "row_count": 595,
+      "chunk_time": 1794071400000000000,
+      "min_time": 1794071400685061500,
+      "max_time": 1794071999682108300
+    },
+    {
+      "id": 11,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/17-20/0000007431.parquet",
+      "size_bytes": 11394,
+      "row_count": 596,
+      "chunk_time": 1794072000000000000,
+      "min_time": 1794072000698987300,
+      "max_time": 1794072599681516800
+    },
+    {
+      "id": 12,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/17-30/0000008028.parquet",
+      "size_bytes": 11438,
+      "row_count": 597,
+      "chunk_time": 1794072600000000000,
+      "min_time": 1794072600681196400,
+      "max_time": 1794073199683734400
+    },
+    {
+      "id": 13,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/17-40/0000008625.parquet",
+      "size_bytes": 11836,
+      "row_count": 597,
+      "chunk_time": 1794073200000000000,
+      "min_time": 1794073200687755700,
+      "max_time": 1794073799682584500
+    },
+    {
+      "id": 14,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/17-50/0000009221.parquet",
+      "size_bytes": 11923,
+      "row_count": 596,
+      "chunk_time": 1794073800000000000,
+      "min_time": 1794073800687918400,
+      "max_time": 1794074399691377900
+    },
+    {
+      "id": 15,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/18-00/0000009818.parquet",
+      "size_bytes": 11793,
+      "row_count": 597,
+      "chunk_time": 1794074400000000000,
+      "min_time": 1794074400693587900,
+      "max_time": 1794074999694019800
+    },
+    {
+      "id": 16,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/18-10/0000010415.parquet",
+      "size_bytes": 11794,
+      "row_count": 597,
+      "chunk_time": 1794075000000000000,
+      "min_time": 1794075000694682100,
+      "max_time": 1794075599696530000
+    },
+    {
+      "id": 17,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/18-20/0000011012.parquet",
+      "size_bytes": 11725,
+      "row_count": 597,
+      "chunk_time": 1794075600000000000,
+      "min_time": 1794075600678451000,
+      "max_time": 1794076199698450000
+    },
+    {
+      "id": 18,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/18-30/0000011608.parquet",
+      "size_bytes": 11832,
+      "row_count": 596,
+      "chunk_time": 1794076200000000000,
+      "min_time": 1794076200680130400,
+      "max_time": 1794076799688464100
+    },
+    {
+      "id": 19,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/18-40/0000012205.parquet",
+      "size_bytes": 11779,
+      "row_count": 597,
+      "chunk_time": 1794076800000000000,
+      "min_time": 1794076800689432800,
+      "max_time": 1794077399689208100
+    },
+    {
+      "id": 20,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/18-50/0000012802.parquet",
+      "size_bytes": 11766,
+      "row_count": 597,
+      "chunk_time": 1794077400000000000,
+      "min_time": 1794077400681753600,
+      "max_time": 1794077999681388800
+    },
+    {
+      "id": 21,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/19-00/0000013398.parquet",
+      "size_bytes": 11732,
+      "row_count": 596,
+      "chunk_time": 1794078000000000000,
+      "min_time": 1794078000678712200,
+      "max_time": 1794078599686129300
+    },
+    {
+      "id": 22,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/19-10/0000013995.parquet",
+      "size_bytes": 11779,
+      "row_count": 597,
+      "chunk_time": 1794078600000000000,
+      "min_time": 1794078600691832100,
+      "max_time": 1794079199682685900
+    },
+    {
+      "id": 23,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/19-20/0000014592.parquet",
+      "size_bytes": 11695,
+      "row_count": 597,
+      "chunk_time": 1794079200000000000,
+      "min_time": 1794079200685856700,
+      "max_time": 1794079799689287900
+    },
+    {
+      "id": 24,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/19-30/0000015188.parquet",
+      "size_bytes": 11711,
+      "row_count": 596,
+      "chunk_time": 1794079800000000000,
+      "min_time": 1794079800690205400,
+      "max_time": 1794080399687166100
+    },
+    {
+      "id": 25,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/19-40/0000015785.parquet",
+      "size_bytes": 11943,
+      "row_count": 597,
+      "chunk_time": 1794080400000000000,
+      "min_time": 1794080400701390900,
+      "max_time": 1794080999698772900
+    },
+    {
+      "id": 26,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/19-50/0000016382.parquet",
+      "size_bytes": 11742,
+      "row_count": 597,
+      "chunk_time": 1794081000000000000,
+      "min_time": 1794081000679062500,
+      "max_time": 1794081599691813600
+    },
+    {
+      "id": 27,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/20-00/0000016979.parquet",
+      "size_bytes": 11854,
+      "row_count": 597,
+      "chunk_time": 1794081600000000000,
+      "min_time": 1794081600680571400,
+      "max_time": 1794082199681336800
+    },
+    {
+      "id": 28,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/20-10/0000017575.parquet",
+      "size_bytes": 11804,
+      "row_count": 596,
+      "chunk_time": 1794082200000000000,
+      "min_time": 1794082200686038100,
+      "max_time": 1794082799686908600
+    },
+    {
+      "id": 29,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/20-20/0000018172.parquet",
+      "size_bytes": 11747,
+      "row_count": 597,
+      "chunk_time": 1794082800000000000,
+      "min_time": 1794082800681534300,
+      "max_time": 1794083399690204800
+    },
+    {
+      "id": 30,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/20-30/0000018769.parquet",
+      "size_bytes": 11762,
+      "row_count": 597,
+      "chunk_time": 1794083400000000000,
+      "min_time": 1794083400695485300,
+      "max_time": 1794083999683186800
+    },
+    {
+      "id": 31,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/20-40/0000019365.parquet",
+      "size_bytes": 11754,
+      "row_count": 596,
+      "chunk_time": 1794084000000000000,
+      "min_time": 1794084000699622600,
+      "max_time": 1794084599683158300
+    },
+    {
+      "id": 32,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/20-50/0000019962.parquet",
+      "size_bytes": 11751,
+      "row_count": 597,
+      "chunk_time": 1794084600000000000,
+      "min_time": 1794084600687177700,
+      "max_time": 1794085199683319900
+    },
+    {
+      "id": 33,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/21-00/0000020559.parquet",
+      "size_bytes": 11865,
+      "row_count": 597,
+      "chunk_time": 1794085200000000000,
+      "min_time": 1794085200689705100,
+      "max_time": 1794085799689489200
+    },
+    {
+      "id": 34,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/21-10/0000021155.parquet",
+      "size_bytes": 11744,
+      "row_count": 596,
+      "chunk_time": 1794085800000000000,
+      "min_time": 1794085800694037100,
+      "max_time": 1794086399701276200
+    },
+    {
+      "id": 35,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/21-20/0000021752.parquet",
+      "size_bytes": 11582,
+      "row_count": 597,
+      "chunk_time": 1794086400000000000,
+      "min_time": 1794086400680518100,
+      "max_time": 1794086999693180500
+    },
+    {
+      "id": 36,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/21-30/0000022349.parquet",
+      "size_bytes": 11725,
+      "row_count": 597,
+      "chunk_time": 1794087000000000000,
+      "min_time": 1794087000687162300,
+      "max_time": 1794087599689023100
+    },
+    {
+      "id": 37,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/21-40/0000022945.parquet",
+      "size_bytes": 11609,
+      "row_count": 596,
+      "chunk_time": 1794087600000000000,
+      "min_time": 1794087600692781700,
+      "max_time": 1794088198687805100
+    },
+    {
+      "id": 38,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/21-50/0000023542.parquet",
+      "size_bytes": 11810,
+      "row_count": 597,
+      "chunk_time": 1794088200000000000,
+      "min_time": 1794088200743217800,
+      "max_time": 1794088799698511900
+    },
+    {
+      "id": 39,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/22-00/0000024139.parquet",
+      "size_bytes": 11680,
+      "row_count": 597,
+      "chunk_time": 1794088800000000000,
+      "min_time": 1794088800694703400,
+      "max_time": 1794089399687643400
+    },
+    {
+      "id": 40,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/22-10/0000024736.parquet",
+      "size_bytes": 11996,
+      "row_count": 597,
+      "chunk_time": 1794089400000000000,
+      "min_time": 1794089400688973300,
+      "max_time": 1794089999686407600
+    },
+    {
+      "id": 41,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/22-20/0000025332.parquet",
+      "size_bytes": 11855,
+      "row_count": 596,
+      "chunk_time": 1794090000000000000,
+      "min_time": 1794090000698025400,
+      "max_time": 1794090599690982700
+    },
+    {
+      "id": 42,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/22-30/0000025929.parquet",
+      "size_bytes": 11707,
+      "row_count": 597,
+      "chunk_time": 1794090600000000000,
+      "min_time": 1794090600696424500,
+      "max_time": 1794091199686748800
+    },
+    {
+      "id": 43,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/22-40/0000026526.parquet",
+      "size_bytes": 11719,
+      "row_count": 597,
+      "chunk_time": 1794091200000000000,
+      "min_time": 1794091200679937400,
+      "max_time": 1794091799696951300
+    },
+    {
+      "id": 44,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/22-50/0000027122.parquet",
+      "size_bytes": 11620,
+      "row_count": 596,
+      "chunk_time": 1794091800000000000,
+      "min_time": 1794091800697988400,
+      "max_time": 1794092399691196400
+    },
+    {
+      "id": 45,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/23-00/0000027719.parquet",
+      "size_bytes": 11621,
+      "row_count": 597,
+      "chunk_time": 1794092400000000000,
+      "min_time": 1794092400694373100,
+      "max_time": 1794092999690778200
+    },
+    {
+      "id": 46,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/23-10/0000028316.parquet",
+      "size_bytes": 11670,
+      "row_count": 597,
+      "chunk_time": 1794093000000000000,
+      "min_time": 1794093000708380900,
+      "max_time": 1794093599690723600
+    },
+    {
+      "id": 47,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/23-20/0000028912.parquet",
+      "size_bytes": 11791,
+      "row_count": 596,
+      "chunk_time": 1794093600000000000,
+      "min_time": 1794093600695079800,
+      "max_time": 1794094199695476000
+    },
+    {
+      "id": 48,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/23-30/0000029509.parquet",
+      "size_bytes": 11741,
+      "row_count": 597,
+      "chunk_time": 1794094200000000000,
+      "min_time": 1794094200679095300,
+      "max_time": 1794094799683753000
+    },
+    {
+      "id": 49,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/23-40/0000030106.parquet",
+      "size_bytes": 11872,
+      "row_count": 597,
+      "chunk_time": 1794094800000000000,
+      "min_time": 1794094800684632200,
+      "max_time": 1794095399695973100
+    },
+    {
+      "id": 50,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-07/23-50/0000030703.parquet",
+      "size_bytes": 11550,
+      "row_count": 597,
+      "chunk_time": 1794095400000000000,
+      "min_time": 1794095400681610700,
+      "max_time": 1794095999691296400
+    },
+    {
+      "id": 51,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/00-00/0000031190.parquet",
+      "size_bytes": 9902,
+      "row_count": 486,
+      "chunk_time": 1794096000000000000,
+      "min_time": 1794096000690875400,
+      "max_time": 1794096488696194900
+    },
+    {
+      "id": 52,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/02-00/0000031756.parquet",
+      "size_bytes": 11400,
+      "row_count": 566,
+      "chunk_time": 1794103200000000000,
+      "min_time": 1794103232036961600,
+      "max_time": 1794103799691831300
+    },
+    {
+      "id": 53,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/02-10/0000032353.parquet",
+      "size_bytes": 11510,
+      "row_count": 597,
+      "chunk_time": 1794103800000000000,
+      "min_time": 1794103800685342300,
+      "max_time": 1794104399691048100
+    },
+    {
+      "id": 54,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/02-20/0000032949.parquet",
+      "size_bytes": 11362,
+      "row_count": 596,
+      "chunk_time": 1794104400000000000,
+      "min_time": 1794104400696901200,
+      "max_time": 1794104999685320500
+    },
+    {
+      "id": 55,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/02-30/0000033545.parquet",
+      "size_bytes": 11497,
+      "row_count": 596,
+      "chunk_time": 1794105000000000000,
+      "min_time": 1794105000688068800,
+      "max_time": 1794105599694427100
+    },
+    {
+      "id": 56,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/02-40/0000034142.parquet",
+      "size_bytes": 11553,
+      "row_count": 597,
+      "chunk_time": 1794105600000000000,
+      "min_time": 1794105600694365100,
+      "max_time": 1794106199683942000
+    },
+    {
+      "id": 57,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/02-50/0000034739.parquet",
+      "size_bytes": 11570,
+      "row_count": 597,
+      "chunk_time": 1794106200000000000,
+      "min_time": 1794106200694277900,
+      "max_time": 1794106799693273000
+    },
+    {
+      "id": 58,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/03-00/0000035336.parquet",
+      "size_bytes": 11553,
+      "row_count": 597,
+      "chunk_time": 1794106800000000000,
+      "min_time": 1794106800683521100,
+      "max_time": 1794107399681060200
+    },
+    {
+      "id": 59,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/03-10/0000035932.parquet",
+      "size_bytes": 11465,
+      "row_count": 596,
+      "chunk_time": 1794107400000000000,
+      "min_time": 1794107400695982200,
+      "max_time": 1794107999682803500
+    },
+    {
+      "id": 60,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/03-20/0000036529.parquet",
+      "size_bytes": 11531,
+      "row_count": 597,
+      "chunk_time": 1794108000000000000,
+      "min_time": 1794108000706577400,
+      "max_time": 1794108599691578400
+    },
+    {
+      "id": 61,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/03-30/0000037126.parquet",
+      "size_bytes": 11508,
+      "row_count": 597,
+      "chunk_time": 1794108600000000000,
+      "min_time": 1794108600692796300,
+      "max_time": 1794109199683505400
+    },
+    {
+      "id": 62,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/03-40/0000037722.parquet",
+      "size_bytes": 11451,
+      "row_count": 596,
+      "chunk_time": 1794109200000000000,
+      "min_time": 1794109200702661500,
+      "max_time": 1794109799682573900
+    },
+    {
+      "id": 63,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/03-50/0000038319.parquet",
+      "size_bytes": 11473,
+      "row_count": 597,
+      "chunk_time": 1794109800000000000,
+      "min_time": 1794109800685756500,
+      "max_time": 1794110399682571900
+    },
+    {
+      "id": 64,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/04-00/0000038916.parquet",
+      "size_bytes": 11545,
+      "row_count": 597,
+      "chunk_time": 1794110400000000000,
+      "min_time": 1794110400694145700,
+      "max_time": 1794110999690027100
+    },
+    {
+      "id": 65,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/04-10/0000039512.parquet",
+      "size_bytes": 11540,
+      "row_count": 596,
+      "chunk_time": 1794111000000000000,
+      "min_time": 1794111000703680800,
+      "max_time": 1794111598696417700
+    },
+    {
+      "id": 66,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/04-20/0000040108.parquet",
+      "size_bytes": 11409,
+      "row_count": 596,
+      "chunk_time": 1794111600000000000,
+      "min_time": 1794111601941905900,
+      "max_time": 1794112199693038000
+    },
+    {
+      "id": 67,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/04-30/0000040705.parquet",
+      "size_bytes": 11285,
+      "row_count": 597,
+      "chunk_time": 1794112200000000000,
+      "min_time": 1794112200687964400,
+      "max_time": 1794112799695202000
+    },
+    {
+      "id": 68,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/04-40/0000041302.parquet",
+      "size_bytes": 11379,
+      "row_count": 597,
+      "chunk_time": 1794112800000000000,
+      "min_time": 1794112800692604500,
+      "max_time": 1794113399698247900
+    },
+    {
+      "id": 69,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/04-50/0000041898.parquet",
+      "size_bytes": 10579,
+      "row_count": 596,
+      "chunk_time": 1794113400000000000,
+      "min_time": 1794113400696298400,
+      "max_time": 1794113999692302300
+    },
+    {
+      "id": 70,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/05-00/0000042495.parquet",
+      "size_bytes": 11320,
+      "row_count": 597,
+      "chunk_time": 1794114000000000000,
+      "min_time": 1794114000698134900,
+      "max_time": 1794114599688609700
+    },
+    {
+      "id": 71,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/05-10/0000043091.parquet",
+      "size_bytes": 11397,
+      "row_count": 596,
+      "chunk_time": 1794114600000000000,
+      "min_time": 1794114600693265800,
+      "max_time": 1794115199685272200
+    },
+    {
+      "id": 72,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/05-20/0000043687.parquet",
+      "size_bytes": 11461,
+      "row_count": 596,
+      "chunk_time": 1794115200000000000,
+      "min_time": 1794115200688189600,
+      "max_time": 1794115799687782500
+    },
+    {
+      "id": 73,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/05-30/0000044284.parquet",
+      "size_bytes": 11403,
+      "row_count": 597,
+      "chunk_time": 1794115800000000000,
+      "min_time": 1794115800681692100,
+      "max_time": 1794116399703510200
+    },
+    {
+      "id": 74,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/05-40/0000044881.parquet",
+      "size_bytes": 11350,
+      "row_count": 597,
+      "chunk_time": 1794116400000000000,
+      "min_time": 1794116400683330400,
+      "max_time": 1794116999699806000
+    },
+    {
+      "id": 75,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/05-50/0000045476.parquet",
+      "size_bytes": 11395,
+      "row_count": 595,
+      "chunk_time": 1794117000000000000,
+      "min_time": 1794117000686835600,
+      "max_time": 1794117597690877700
+    },
+    {
+      "id": 76,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/06-00/0000046074.parquet",
+      "size_bytes": 11436,
+      "row_count": 598,
+      "chunk_time": 1794117600000000000,
+      "min_time": 1794117600214674700,
+      "max_time": 1794118199687017700
+    },
+    {
+      "id": 77,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/06-10/0000046671.parquet",
+      "size_bytes": 11700,
+      "row_count": 597,
+      "chunk_time": 1794118200000000000,
+      "min_time": 1794118200693932600,
+      "max_time": 1794118799698293400
+    },
+    {
+      "id": 78,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/06-20/0000047268.parquet",
+      "size_bytes": 11689,
+      "row_count": 597,
+      "chunk_time": 1794118800000000000,
+      "min_time": 1794118800682840100,
+      "max_time": 1794119399682310500
+    },
+    {
+      "id": 79,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/06-30/0000047864.parquet",
+      "size_bytes": 11679,
+      "row_count": 596,
+      "chunk_time": 1794119400000000000,
+      "min_time": 1794119400682269600,
+      "max_time": 1794119999685326300
+    },
+    {
+      "id": 80,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/06-40/0000048461.parquet",
+      "size_bytes": 11644,
+      "row_count": 597,
+      "chunk_time": 1794120000000000000,
+      "min_time": 1794120000688367400,
+      "max_time": 1794120599687784300
+    },
+    {
+      "id": 81,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/06-50/0000049014.parquet",
+      "size_bytes": 11061,
+      "row_count": 553,
+      "chunk_time": 1794120600000000000,
+      "min_time": 1794120600686568200,
+      "max_time": 1794121199696185200
+    },
+    {
+      "id": 82,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/07-00/0000049410.parquet",
+      "size_bytes": 8947,
+      "row_count": 396,
+      "chunk_time": 1794121200000000000,
+      "min_time": 1794121200684984000,
+      "max_time": 1794121799682036400
+    },
+    {
+      "id": 83,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/07-10/0000050006.parquet",
+      "size_bytes": 11893,
+      "row_count": 596,
+      "chunk_time": 1794121800000000000,
+      "min_time": 1794121800678579200,
+      "max_time": 1794122399691904400
+    },
+    {
+      "id": 84,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/07-20/0000050603.parquet",
+      "size_bytes": 11412,
+      "row_count": 597,
+      "chunk_time": 1794122400000000000,
+      "min_time": 1794122400688036700,
+      "max_time": 1794122999685267000
+    },
+    {
+      "id": 85,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/07-30/0000051200.parquet",
+      "size_bytes": 11548,
+      "row_count": 597,
+      "chunk_time": 1794123000000000000,
+      "min_time": 1794123000686080200,
+      "max_time": 1794123599681262600
+    },
+    {
+      "id": 86,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/07-40/0000051797.parquet",
+      "size_bytes": 11631,
+      "row_count": 597,
+      "chunk_time": 1794123600000000000,
+      "min_time": 1794123600683441500,
+      "max_time": 1794124199691509700
+    },
+    {
+      "id": 87,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/07-50/0000052393.parquet",
+      "size_bytes": 11682,
+      "row_count": 596,
+      "chunk_time": 1794124200000000000,
+      "min_time": 1794124200699113100,
+      "max_time": 1794124799697302000
+    },
+    {
+      "id": 88,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/08-00/0000052990.parquet",
+      "size_bytes": 11723,
+      "row_count": 597,
+      "chunk_time": 1794124800000000000,
+      "min_time": 1794124800690991100,
+      "max_time": 1794125399695144200
+    },
+    {
+      "id": 89,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/08-10/0000053587.parquet",
+      "size_bytes": 11797,
+      "row_count": 597,
+      "chunk_time": 1794125400000000000,
+      "min_time": 1794125400680274900,
+      "max_time": 1794125999693076200
+    },
+    {
+      "id": 90,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/08-20/0000054179.parquet",
+      "size_bytes": 11589,
+      "row_count": 592,
+      "chunk_time": 1794126000000000000,
+      "min_time": 1794126000695907500,
+      "max_time": 1794126599682843100
+    },
+    {
+      "id": 91,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/08-30/0000054776.parquet",
+      "size_bytes": 11384,
+      "row_count": 597,
+      "chunk_time": 1794126600000000000,
+      "min_time": 1794126600699775000,
+      "max_time": 1794127199695755600
+    },
+    {
+      "id": 92,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/08-40/0000055373.parquet",
+      "size_bytes": 11456,
+      "row_count": 597,
+      "chunk_time": 1794127200000000000,
+      "min_time": 1794127200694022600,
+      "max_time": 1794127799685479300
+    },
+    {
+      "id": 93,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/08-50/0000055969.parquet",
+      "size_bytes": 11777,
+      "row_count": 596,
+      "chunk_time": 1794127800000000000,
+      "min_time": 1794127800682121400,
+      "max_time": 1794128399686292100
+    },
+    {
+      "id": 94,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/09-00/0000056535.parquet",
+      "size_bytes": 11444,
+      "row_count": 566,
+      "chunk_time": 1794128400000000000,
+      "min_time": 1794128400683203700,
+      "max_time": 1794128999693841900
+    },
+    {
+      "id": 95,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/09-10/0000057132.parquet",
+      "size_bytes": 11348,
+      "row_count": 597,
+      "chunk_time": 1794129000000000000,
+      "min_time": 1794129000684673000,
+      "max_time": 1794129599680015300
+    },
+    {
+      "id": 96,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/09-20/0000057729.parquet",
+      "size_bytes": 11083,
+      "row_count": 597,
+      "chunk_time": 1794129600000000000,
+      "min_time": 1794129600684019300,
+      "max_time": 1794130199697923800
+    },
+    {
+      "id": 97,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/09-50/0000058432.parquet",
+      "size_bytes": 3009,
+      "row_count": 45,
+      "chunk_time": 1794131400000000000,
+      "min_time": 1794131405196343400,
+      "max_time": 1794131991590538600
+    },
+    {
+      "id": 98,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/10-30/0000058432.parquet",
+      "size_bytes": 2461,
+      "row_count": 1,
+      "chunk_time": 1794133800000000000,
+      "min_time": 1794133804017874200,
+      "max_time": 1794133804017874200
+    },
+    {
+      "id": 99,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/09-40/0000058432.parquet",
+      "size_bytes": 3031,
+      "row_count": 45,
+      "chunk_time": 1794130800000000000,
+      "min_time": 1794130805488174800,
+      "max_time": 1794131391869227100
+    },
+    {
+      "id": 100,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/10-10/0000058432.parquet",
+      "size_bytes": 2999,
+      "row_count": 45,
+      "chunk_time": 1794132600000000000,
+      "min_time": 1794132604606424200,
+      "max_time": 1794133190986527900
+    },
+    {
+      "id": 101,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/10-20/0000058432.parquet",
+      "size_bytes": 3042,
+      "row_count": 45,
+      "chunk_time": 1794133200000000000,
+      "min_time": 1794133204311408200,
+      "max_time": 1794133790694086500
+    },
+    {
+      "id": 102,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/10-00/0000058432.parquet",
+      "size_bytes": 3031,
+      "row_count": 45,
+      "chunk_time": 1794132000000000000,
+      "min_time": 1794132004900823000,
+      "max_time": 1794132591278150300
+    },
+    {
+      "id": 103,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/09-30/0000058432.parquet",
+      "size_bytes": 9488,
+      "row_count": 476,
+      "chunk_time": 1794130200000000000,
+      "min_time": 1794130200691843800,
+      "max_time": 1794130792159524800
+    },
+    {
+      "id": 104,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/10-50/0000059263.parquet",
+      "size_bytes": 11566,
+      "row_count": 597,
+      "chunk_time": 1794135000000000000,
+      "min_time": 1794135000680888700,
+      "max_time": 1794135599688265300
+    },
+    {
+      "id": 105,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/10-30/0000059263.parquet",
+      "size_bytes": 2996,
+      "row_count": 44,
+      "chunk_time": 1794133800000000000,
+      "min_time": 1794133817354633400,
+      "max_time": 1794134390400185000
+    },
+    {
+      "id": 106,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/10-40/0000059263.parquet",
+      "size_bytes": 5518,
+      "row_count": 190,
+      "chunk_time": 1794134400000000000,
+      "min_time": 1794134403755783200,
+      "max_time": 1794134999696299100
+    },
+    {
+      "id": 107,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/11-00/0000059860.parquet",
+      "size_bytes": 11664,
+      "row_count": 597,
+      "chunk_time": 1794135600000000000,
+      "min_time": 1794135600692583800,
+      "max_time": 1794136199685654400
+    },
+    {
+      "id": 108,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/11-10/0000060457.parquet",
+      "size_bytes": 11697,
+      "row_count": 597,
+      "chunk_time": 1794136200000000000,
+      "min_time": 1794136200690792700,
+      "max_time": 1794136799688674600
+    },
+    {
+      "id": 109,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/11-20/0000061053.parquet",
+      "size_bytes": 11818,
+      "row_count": 596,
+      "chunk_time": 1794136800000000000,
+      "min_time": 1794136800689559000,
+      "max_time": 1794137399690063700
+    },
+    {
+      "id": 110,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/11-30/0000061650.parquet",
+      "size_bytes": 11635,
+      "row_count": 597,
+      "chunk_time": 1794137400000000000,
+      "min_time": 1794137400690191800,
+      "max_time": 1794137999688500900
+    },
+    {
+      "id": 111,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/11-40/0000062247.parquet",
+      "size_bytes": 11868,
+      "row_count": 597,
+      "chunk_time": 1794138000000000000,
+      "min_time": 1794138000686890900,
+      "max_time": 1794138599691697700
+    },
+    {
+      "id": 112,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/11-50/0000062843.parquet",
+      "size_bytes": 11796,
+      "row_count": 596,
+      "chunk_time": 1794138600000000000,
+      "min_time": 1794138600688582200,
+      "max_time": 1794139199684494600
+    },
+    {
+      "id": 113,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/12-00/0000063440.parquet",
+      "size_bytes": 11693,
+      "row_count": 597,
+      "chunk_time": 1794139200000000000,
+      "min_time": 1794139200686663500,
+      "max_time": 1794139799694076200
+    },
+    {
+      "id": 114,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/12-10/0000064037.parquet",
+      "size_bytes": 11688,
+      "row_count": 597,
+      "chunk_time": 1794139800000000000,
+      "min_time": 1794139800697489900,
+      "max_time": 1794140399686653400
+    },
+    {
+      "id": 115,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/12-20/0000064634.parquet",
+      "size_bytes": 11514,
+      "row_count": 597,
+      "chunk_time": 1794140400000000000,
+      "min_time": 1794140400683500000,
+      "max_time": 1794140999687376400
+    },
+    {
+      "id": 116,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/12-30/0000065230.parquet",
+      "size_bytes": 11611,
+      "row_count": 596,
+      "chunk_time": 1794141000000000000,
+      "min_time": 1794141000684130900,
+      "max_time": 1794141599687105700
+    },
+    {
+      "id": 117,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/12-40/0000065827.parquet",
+      "size_bytes": 11713,
+      "row_count": 597,
+      "chunk_time": 1794141600000000000,
+      "min_time": 1794141600698234800,
+      "max_time": 1794142199684023200
+    },
+    {
+      "id": 118,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/12-50/0000066424.parquet",
+      "size_bytes": 12041,
+      "row_count": 597,
+      "chunk_time": 1794142200000000000,
+      "min_time": 1794142200688818500,
+      "max_time": 1794142799685164800
+    },
+    {
+      "id": 119,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/13-00/0000066800.parquet",
+      "size_bytes": 8740,
+      "row_count": 376,
+      "chunk_time": 1794142800000000000,
+      "min_time": 1794142800690439800,
+      "max_time": 1794143399695687000
+    },
+    {
+      "id": 120,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/13-10/0000067393.parquet",
+      "size_bytes": 11815,
+      "row_count": 593,
+      "chunk_time": 1794143400000000000,
+      "min_time": 1794143400694694800,
+      "max_time": 1794143999690359300
+    },
+    {
+      "id": 121,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/13-20/0000067990.parquet",
+      "size_bytes": 11831,
+      "row_count": 597,
+      "chunk_time": 1794144000000000000,
+      "min_time": 1794144000693248900,
+      "max_time": 1794144599686989100
+    },
+    {
+      "id": 122,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/13-30/0000068426.parquet",
+      "size_bytes": 9439,
+      "row_count": 436,
+      "chunk_time": 1794144600000000000,
+      "min_time": 1794144600681946700,
+      "max_time": 1794145199690271200
+    },
+    {
+      "id": 123,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/13-40/0000069022.parquet",
+      "size_bytes": 11645,
+      "row_count": 596,
+      "chunk_time": 1794145200000000000,
+      "min_time": 1794145200694060600,
+      "max_time": 1794145799679863500
+    },
+    {
+      "id": 124,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/13-50/0000069619.parquet",
+      "size_bytes": 11740,
+      "row_count": 597,
+      "chunk_time": 1794145800000000000,
+      "min_time": 1794145800684301900,
+      "max_time": 1794146399699239300
+    },
+    {
+      "id": 125,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/14-00/0000070216.parquet",
+      "size_bytes": 11858,
+      "row_count": 597,
+      "chunk_time": 1794146400000000000,
+      "min_time": 1794146400691512800,
+      "max_time": 1794146999696879800
+    },
+    {
+      "id": 126,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/14-10/0000070813.parquet",
+      "size_bytes": 12035,
+      "row_count": 597,
+      "chunk_time": 1794147000000000000,
+      "min_time": 1794147000686891400,
+      "max_time": 1794147599693086400
+    },
+    {
+      "id": 127,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/14-20/0000071408.parquet",
+      "size_bytes": 11949,
+      "row_count": 595,
+      "chunk_time": 1794147600000000000,
+      "min_time": 1794147600679494100,
+      "max_time": 1794148199690878200
+    },
+    {
+      "id": 128,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/14-30/0000072005.parquet",
+      "size_bytes": 11443,
+      "row_count": 597,
+      "chunk_time": 1794148200000000000,
+      "min_time": 1794148200699855600,
+      "max_time": 1794148799690371100
+    },
+    {
+      "id": 129,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/14-40/0000072602.parquet",
+      "size_bytes": 11472,
+      "row_count": 597,
+      "chunk_time": 1794148800000000000,
+      "min_time": 1794148800691463600,
+      "max_time": 1794149399693439400
+    },
+    {
+      "id": 130,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/14-50/0000073194.parquet",
+      "size_bytes": 11275,
+      "row_count": 592,
+      "chunk_time": 1794149400000000000,
+      "min_time": 1794149400693676000,
+      "max_time": 1794149999690751500
+    },
+    {
+      "id": 131,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/15-00/0000073791.parquet",
+      "size_bytes": 11721,
+      "row_count": 597,
+      "chunk_time": 1794150000000000000,
+      "min_time": 1794150000681010400,
+      "max_time": 1794150599696493400
+    },
+    {
+      "id": 132,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/15-10/0000074388.parquet",
+      "size_bytes": 11236,
+      "row_count": 597,
+      "chunk_time": 1794150600000000000,
+      "min_time": 1794150600692126200,
+      "max_time": 1794151199681600000
+    },
+    {
+      "id": 133,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/15-30/0000075272.parquet",
+      "size_bytes": 7473,
+      "row_count": 331,
+      "chunk_time": 1794151800000000000,
+      "min_time": 1794151812027856100,
+      "max_time": 1794152399700566700
+    },
+    {
+      "id": 134,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/15-20/0000075272.parquet",
+      "size_bytes": 10842,
+      "row_count": 553,
+      "chunk_time": 1794151200000000000,
+      "min_time": 1794151200699818400,
+      "max_time": 1794151798700146100
+    },
+    {
+      "id": 135,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/15-40/0000075868.parquet",
+      "size_bytes": 11213,
+      "row_count": 596,
+      "chunk_time": 1794152400000000000,
+      "min_time": 1794152400687990500,
+      "max_time": 1794152999687216400
+    },
+    {
+      "id": 136,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/15-50/0000076464.parquet",
+      "size_bytes": 11369,
+      "row_count": 596,
+      "chunk_time": 1794153000000000000,
+      "min_time": 1794153002137374800,
+      "max_time": 1794153599696430200
+    },
+    {
+      "id": 137,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/16-00/0000077061.parquet",
+      "size_bytes": 11524,
+      "row_count": 597,
+      "chunk_time": 1794153600000000000,
+      "min_time": 1794153600690831600,
+      "max_time": 1794154199687131000
+    },
+    {
+      "id": 138,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/16-10/0000077658.parquet",
+      "size_bytes": 11660,
+      "row_count": 597,
+      "chunk_time": 1794154200000000000,
+      "min_time": 1794154200709762200,
+      "max_time": 1794154799700994800
+    },
+    {
+      "id": 139,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/16-20/0000078254.parquet",
+      "size_bytes": 11161,
+      "row_count": 596,
+      "chunk_time": 1794154800000000000,
+      "min_time": 1794154800694757000,
+      "max_time": 1794155399683483800
+    },
+    {
+      "id": 140,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/16-30/0000078851.parquet",
+      "size_bytes": 11028,
+      "row_count": 597,
+      "chunk_time": 1794155400000000000,
+      "min_time": 1794155400682289900,
+      "max_time": 1794155999682123400
+    },
+    {
+      "id": 141,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/16-40/0000079448.parquet",
+      "size_bytes": 10969,
+      "row_count": 597,
+      "chunk_time": 1794156000000000000,
+      "min_time": 1794156000695150200,
+      "max_time": 1794156599692365100
+    },
+    {
+      "id": 142,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/16-50/0000080044.parquet",
+      "size_bytes": 10956,
+      "row_count": 596,
+      "chunk_time": 1794156600000000000,
+      "min_time": 1794156600680374500,
+      "max_time": 1794157199686012100
+    },
+    {
+      "id": 143,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/17-00/0000080641.parquet",
+      "size_bytes": 11276,
+      "row_count": 597,
+      "chunk_time": 1794157200000000000,
+      "min_time": 1794157200685610500,
+      "max_time": 1794157799685227800
+    },
+    {
+      "id": 144,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/17-10/0000081238.parquet",
+      "size_bytes": 11384,
+      "row_count": 597,
+      "chunk_time": 1794157800000000000,
+      "min_time": 1794157800699549600,
+      "max_time": 1794158399685510100
+    },
+    {
+      "id": 145,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/17-20/0000081835.parquet",
+      "size_bytes": 11593,
+      "row_count": 597,
+      "chunk_time": 1794158400000000000,
+      "min_time": 1794158400679228300,
+      "max_time": 1794158999681665300
+    },
+    {
+      "id": 146,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/17-30/0000082431.parquet",
+      "size_bytes": 11476,
+      "row_count": 596,
+      "chunk_time": 1794159000000000000,
+      "min_time": 1794159002055043000,
+      "max_time": 1794159599680947300
+    },
+    {
+      "id": 147,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/17-40/0000083028.parquet",
+      "size_bytes": 11558,
+      "row_count": 597,
+      "chunk_time": 1794159600000000000,
+      "min_time": 1794159600687524200,
+      "max_time": 1794160199682804800
+    },
+    {
+      "id": 148,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/17-50/0000083625.parquet",
+      "size_bytes": 11530,
+      "row_count": 597,
+      "chunk_time": 1794160200000000000,
+      "min_time": 1794160200687017900,
+      "max_time": 1794160799696672600
+    },
+    {
+      "id": 149,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/18-00/0000084221.parquet",
+      "size_bytes": 11404,
+      "row_count": 596,
+      "chunk_time": 1794160800000000000,
+      "min_time": 1794160800682915600,
+      "max_time": 1794161399693610600
+    },
+    {
+      "id": 150,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/18-10/0000084818.parquet",
+      "size_bytes": 11414,
+      "row_count": 597,
+      "chunk_time": 1794161400000000000,
+      "min_time": 1794161400692201100,
+      "max_time": 1794161999684989700
+    },
+    {
+      "id": 151,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/18-20/0000085415.parquet",
+      "size_bytes": 11512,
+      "row_count": 597,
+      "chunk_time": 1794162000000000000,
+      "min_time": 1794162000686042200,
+      "max_time": 1794162599683582700
+    },
+    {
+      "id": 152,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/18-30/0000086011.parquet",
+      "size_bytes": 11376,
+      "row_count": 596,
+      "chunk_time": 1794162600000000000,
+      "min_time": 1794162600699176200,
+      "max_time": 1794163199687222800
+    },
+    {
+      "id": 153,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/18-40/0000086608.parquet",
+      "size_bytes": 11265,
+      "row_count": 597,
+      "chunk_time": 1794163200000000000,
+      "min_time": 1794163200705329100,
+      "max_time": 1794163799677903500
+    },
+    {
+      "id": 154,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/18-50/0000087205.parquet",
+      "size_bytes": 11406,
+      "row_count": 597,
+      "chunk_time": 1794163800000000000,
+      "min_time": 1794163800683026300,
+      "max_time": 1794164399697431100
+    },
+    {
+      "id": 155,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/19-00/0000087801.parquet",
+      "size_bytes": 11472,
+      "row_count": 596,
+      "chunk_time": 1794164400000000000,
+      "min_time": 1794164400683496700,
+      "max_time": 1794164999691848600
+    },
+    {
+      "id": 156,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/19-10/0000088394.parquet",
+      "size_bytes": 11674,
+      "row_count": 593,
+      "chunk_time": 1794165000000000000,
+      "min_time": 1794165000696992300,
+      "max_time": 1794165599685479300
+    },
+    {
+      "id": 157,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/19-20/0000088991.parquet",
+      "size_bytes": 11373,
+      "row_count": 597,
+      "chunk_time": 1794165600000000000,
+      "min_time": 1794165600690446700,
+      "max_time": 1794166199684511200
+    },
+    {
+      "id": 158,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/19-30/0000089588.parquet",
+      "size_bytes": 11450,
+      "row_count": 597,
+      "chunk_time": 1794166200000000000,
+      "min_time": 1794166200688436900,
+      "max_time": 1794166799695662400
+    },
+    {
+      "id": 159,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/19-40/0000090184.parquet",
+      "size_bytes": 11408,
+      "row_count": 596,
+      "chunk_time": 1794166800000000000,
+      "min_time": 1794166800685960600,
+      "max_time": 1794167399684121900
+    },
+    {
+      "id": 160,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/19-50/0000090781.parquet",
+      "size_bytes": 11681,
+      "row_count": 597,
+      "chunk_time": 1794167400000000000,
+      "min_time": 1794167400687116900,
+      "max_time": 1794167999691852200
+    },
+    {
+      "id": 161,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/20-00/0000091378.parquet",
+      "size_bytes": 11848,
+      "row_count": 597,
+      "chunk_time": 1794168000000000000,
+      "min_time": 1794168000681868400,
+      "max_time": 1794168599692253200
+    },
+    {
+      "id": 162,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/20-10/0000091974.parquet",
+      "size_bytes": 11801,
+      "row_count": 596,
+      "chunk_time": 1794168600000000000,
+      "min_time": 1794168600700870200,
+      "max_time": 1794169199684088900
+    },
+    {
+      "id": 163,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/20-20/0000092571.parquet",
+      "size_bytes": 11844,
+      "row_count": 597,
+      "chunk_time": 1794169200000000000,
+      "min_time": 1794169200689835700,
+      "max_time": 1794169799683551600
+    },
+    {
+      "id": 164,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/20-30/0000093168.parquet",
+      "size_bytes": 11815,
+      "row_count": 597,
+      "chunk_time": 1794169800000000000,
+      "min_time": 1794169800699689600,
+      "max_time": 1794170399689426900
+    },
+    {
+      "id": 165,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/20-40/0000093765.parquet",
+      "size_bytes": 11749,
+      "row_count": 597,
+      "chunk_time": 1794170400000000000,
+      "min_time": 1794170400692708600,
+      "max_time": 1794170999680583200
+    },
+    {
+      "id": 166,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/20-50/0000094361.parquet",
+      "size_bytes": 11716,
+      "row_count": 596,
+      "chunk_time": 1794171000000000000,
+      "min_time": 1794171000683793400,
+      "max_time": 1794171599692057000
+    },
+    {
+      "id": 167,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/21-00/0000094958.parquet",
+      "size_bytes": 11623,
+      "row_count": 597,
+      "chunk_time": 1794171600000000000,
+      "min_time": 1794171600686816800,
+      "max_time": 1794172199689317200
+    },
+    {
+      "id": 168,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/21-10/0000095554.parquet",
+      "size_bytes": 11653,
+      "row_count": 596,
+      "chunk_time": 1794172200000000000,
+      "min_time": 1794172200687047700,
+      "max_time": 1794172799687788300
+    },
+    {
+      "id": 169,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/21-20/0000096150.parquet",
+      "size_bytes": 11601,
+      "row_count": 596,
+      "chunk_time": 1794172800000000000,
+      "min_time": 1794172800693212100,
+      "max_time": 1794173399697556400
+    },
+    {
+      "id": 170,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/21-30/0000096747.parquet",
+      "size_bytes": 11708,
+      "row_count": 597,
+      "chunk_time": 1794173400000000000,
+      "min_time": 1794173400682422700,
+      "max_time": 1794173999706402900
+    },
+    {
+      "id": 171,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/21-40/0000097343.parquet",
+      "size_bytes": 11527,
+      "row_count": 596,
+      "chunk_time": 1794174000000000000,
+      "min_time": 1794174000694037800,
+      "max_time": 1794174599685299900
+    },
+    {
+      "id": 172,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/21-50/0000097939.parquet",
+      "size_bytes": 11631,
+      "row_count": 596,
+      "chunk_time": 1794174600000000000,
+      "min_time": 1794174600688504300,
+      "max_time": 1794175199693066800
+    },
+    {
+      "id": 173,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/22-00/0000098536.parquet",
+      "size_bytes": 11920,
+      "row_count": 597,
+      "chunk_time": 1794175200000000000,
+      "min_time": 1794175200681464800,
+      "max_time": 1794175799694602800
+    },
+    {
+      "id": 174,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/22-10/0000099133.parquet",
+      "size_bytes": 11615,
+      "row_count": 597,
+      "chunk_time": 1794175800000000000,
+      "min_time": 1794175800681379900,
+      "max_time": 1794176399681679000
+    },
+    {
+      "id": 175,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/22-20/0000099730.parquet",
+      "size_bytes": 11751,
+      "row_count": 597,
+      "chunk_time": 1794176400000000000,
+      "min_time": 1794176400692955700,
+      "max_time": 1794176999683301300
+    },
+    {
+      "id": 176,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/22-30/0000100326.parquet",
+      "size_bytes": 11835,
+      "row_count": 596,
+      "chunk_time": 1794177000000000000,
+      "min_time": 1794177000688270800,
+      "max_time": 1794177599694359700
+    },
+    {
+      "id": 177,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/22-40/0000100923.parquet",
+      "size_bytes": 11639,
+      "row_count": 597,
+      "chunk_time": 1794177600000000000,
+      "min_time": 1794177600699699300,
+      "max_time": 1794178199689349300
+    },
+    {
+      "id": 178,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/22-50/0000101520.parquet",
+      "size_bytes": 11797,
+      "row_count": 597,
+      "chunk_time": 1794178200000000000,
+      "min_time": 1794178200684061600,
+      "max_time": 1794178799685638200
+    },
+    {
+      "id": 179,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/23-00/0000102116.parquet",
+      "size_bytes": 11749,
+      "row_count": 596,
+      "chunk_time": 1794178800000000000,
+      "min_time": 1794178800685050900,
+      "max_time": 1794179399694790700
+    },
+    {
+      "id": 180,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/23-10/0000102713.parquet",
+      "size_bytes": 11703,
+      "row_count": 597,
+      "chunk_time": 1794179400000000000,
+      "min_time": 1794179400691960000,
+      "max_time": 1794179999683860900
+    },
+    {
+      "id": 181,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/23-20/0000103196.parquet",
+      "size_bytes": 10142,
+      "row_count": 483,
+      "chunk_time": 1794180000000000000,
+      "min_time": 1794180000690015600,
+      "max_time": 1794180599694462400
+    },
+    {
+      "id": 182,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/23-30/0000103792.parquet",
+      "size_bytes": 11459,
+      "row_count": 596,
+      "chunk_time": 1794180600000000000,
+      "min_time": 1794180600681593500,
+      "max_time": 1794181199693596900
+    },
+    {
+      "id": 183,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/23-40/0000104389.parquet",
+      "size_bytes": 11373,
+      "row_count": 597,
+      "chunk_time": 1794181200000000000,
+      "min_time": 1794181200678720600,
+      "max_time": 1794181799710359600
+    },
+    {
+      "id": 184,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-09/00-00/0000105208.parquet",
+      "size_bytes": 5962,
+      "row_count": 222,
+      "chunk_time": 1794182400000000000,
+      "min_time": 1794182400693625200,
+      "max_time": 1794182994402561400
+    },
+    {
+      "id": 185,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/23-50/0000105208.parquet",
+      "size_bytes": 11344,
+      "row_count": 597,
+      "chunk_time": 1794181800000000000,
+      "min_time": 1794181800698491100,
+      "max_time": 1794182399681940400
+    },
+    {
+      "id": 186,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-09/00-20/0000105657.parquet",
+      "size_bytes": 6647,
+      "row_count": 263,
+      "chunk_time": 1794183600000000000,
+      "min_time": 1794183600680975800,
+      "max_time": 1794184199689211200
+    },
+    {
+      "id": 187,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-09/00-10/0000105657.parquet",
+      "size_bytes": 5414,
+      "row_count": 186,
+      "chunk_time": 1794183000000000000,
+      "min_time": 1794183007725612300,
+      "max_time": 1794183599685981400
+    },
+    {
+      "id": 188,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-09/00-30/0000106254.parquet",
+      "size_bytes": 11962,
+      "row_count": 597,
+      "chunk_time": 1794184200000000000,
+      "min_time": 1794184200681243300,
+      "max_time": 1794184799688953500
+    },
+    {
+      "id": 189,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-09/00-40/0000106850.parquet",
+      "size_bytes": 11624,
+      "row_count": 596,
+      "chunk_time": 1794184800000000000,
+      "min_time": 1794184800683527800,
+      "max_time": 1794185399688763100
+    },
+    {
+      "id": 190,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-09/00-50/0000107447.parquet",
+      "size_bytes": 11842,
+      "row_count": 597,
+      "chunk_time": 1794185400000000000,
+      "min_time": 1794185400691250200,
+      "max_time": 1794185999679988300
+    },
+    {
+      "id": 191,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-09/01-00/0000108044.parquet",
+      "size_bytes": 11839,
+      "row_count": 597,
+      "chunk_time": 1794186000000000000,
+      "min_time": 1794186000682522100,
+      "max_time": 1794186599687763800
+    },
+    {
+      "id": 192,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-09/01-10/0000108640.parquet",
+      "size_bytes": 11860,
+      "row_count": 596,
+      "chunk_time": 1794186600000000000,
+      "min_time": 1794186600694536200,
+      "max_time": 1794187199682608400
+    },
+    {
+      "id": 193,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-09/01-20/0000109237.parquet",
+      "size_bytes": 11931,
+      "row_count": 597,
+      "chunk_time": 1794187200000000000,
+      "min_time": 1794187200689397000,
+      "max_time": 1794187799695920000
+    },
+    {
+      "id": 194,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-09/01-30/0000109834.parquet",
+      "size_bytes": 11828,
+      "row_count": 597,
+      "chunk_time": 1794187800000000000,
+      "min_time": 1794187800681301900,
+      "max_time": 1794188399683908500
+    },
+    {
+      "id": 195,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-09/01-40/0000110430.parquet",
+      "size_bytes": 11879,
+      "row_count": 596,
+      "chunk_time": 1794188400000000000,
+      "min_time": 1794188400698821500,
+      "max_time": 1794188999689042800
+    },
+    {
+      "id": 196,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-09/01-50/0000111027.parquet",
+      "size_bytes": 11807,
+      "row_count": 597,
+      "chunk_time": 1794189000000000000,
+      "min_time": 1794189000684231400,
+      "max_time": 1794189599697327000
+    },
+    {
+      "id": 197,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-09/02-00/0000111624.parquet",
+      "size_bytes": 11883,
+      "row_count": 597,
+      "chunk_time": 1794189600000000000,
+      "min_time": 1794189600696702700,
+      "max_time": 1794190199692401400
+    },
+    {
+      "id": 198,
+      "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-09/02-10/0000112221.parquet",
+      "size_bytes": 11901,
+      "row_count": 597,
+      "chunk_time": 1794190200000000000,
+      "min_time": 1794190200693771000,
+      "max_time": 1794190799697104500
+    }
+  ],
+  "latest_snapshot_sequence_number": 188,
+  "parquet_size_bytes": 2204764,
+  "row_count": 111627,
+  "min_time": 1794065723235032700,
+  "max_time": 1794190799697104500
+}

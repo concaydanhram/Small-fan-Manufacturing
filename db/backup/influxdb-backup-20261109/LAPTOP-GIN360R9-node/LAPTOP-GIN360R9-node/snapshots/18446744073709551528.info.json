@@ -1,0 +1,36 @@
+{
+  "version": "1",
+  "node_id": "LAPTOP-GIN360R9-node",
+  "next_file_id": 87,
+  "snapshot_sequence_number": 87,
+  "wal_file_sequence_number": 51797,
+  "catalog_sequence_number": 6,
+  "parquet_size_bytes": 11631,
+  "row_count": 597,
+  "min_time": 1794123600683441500,
+  "max_time": 1794124199691509700,
+  "databases": [
+    [
+      1,
+      {
+        "tables": [
+          [
+            1,
+            [
+              {
+                "id": 86,
+                "path": "LAPTOP-GIN360R9-node/dbs/1/1/2026-11-08/07-40/0000051797.parquet",
+                "size_bytes": 11631,
+                "row_count": 597,
+                "chunk_time": 1794123600000000000,
+                "min_time": 1794123600683441500,
+                "max_time": 1794124199691509700
+              }
+            ]
+          ]
+        ]
+      }
+    ]
+  ],
+  "removed_files": []
+}
